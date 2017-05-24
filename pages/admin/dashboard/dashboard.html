@@ -1,0 +1,63 @@
+<div class="app app-header-fixed" id="app">
+    <!-- navbar -->
+    <div class="app-header navbar">
+        <div class="collapse pos-rlt navbar-collapse box-shadow bg-white-only">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" data-toggle="dropdown" class="dropdown-toggle clear">
+                      <span class="thumb-sm avatar pull-right m-t-n-sm m-b-n-sm m-l-sm">
+                        <img src="/AngularRouter/images/head.jpg">
+                        <i class="on md b-white bottom"></i>
+                      </span>
+                        <span class="hidden-sm hidden-md">Administrator</span> <b class="caret"></b>
+                    </a>
+                    <!-- dropdown -->
+                    <ul class="dropdown-menu animated fadeInRight w hidden-folded" role="menu">
+                        <li>
+                            <a href="#" role="menuitem">退出</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- menu -->
+    <div class="app-aside hidden-xs bg-dark">
+        <div class="aside-wrap">
+            <div class="navi-wrap">
+                <!-- nav -->
+                <nav ui-nav class="navi">
+                    <ul class="nav">
+                        <li>
+                            <a ui-sref=".accountManagement" class="auto">
+                                <i class="glyphicon glyphicon-user"></i>
+                                <span class="font-bold">账户管理</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a ui-sref=".academicYear">
+                                <i class="glyphicon glyphicon-calendar"></i>
+                                <span class="font-bold">学年学期管理</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a ui-sref=".feedbackManagement">
+                                <i class="glyphicon glyphicon-send"></i>
+                                <span class="font-bold">用户反馈管理</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- nav -->
+            </div>
+        </div>
+    </div>
+    <!-- / menu -->
+    <!-- content -->
+    <div class="app-content">
+        <div data-ui-view="">
+        </div>
+    </div>
+    <!-- /content -->
+</div>
